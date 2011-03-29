@@ -1,0 +1,51 @@
+<style>code{ color: #000; font-size: 12px; background-color: whiteSmoke; display: block; margin: 10px 0; padding: 20px; }</style>
+
+%h1 Artwork
+
+<object height="425" width="425">
+<param name="movie" value="http://player.soundcloud.com/player.swf?url=#{SETTINGS["track"]}#{SETTINGS["player"]["params"]}&player_type=artwork"></param>
+<param name="allowscriptaccess" value="always"></param>
+<embed allowscriptaccess="always" height="425" src="http://player.soundcloud.com/player.swf?url=#{SETTINGS["track"]}#{SETTINGS["player"]["params"]}&player_type=artwork" type="application/x-shockwave-flash" width="425"></embed>
+</object>
+
+%code
+	:escaped
+		<object height="425" width="425">
+		<param name="movie" value="http://player.soundcloud.com/player.swf?url=#{SETTINGS["track"]}#{SETTINGS["player"]["params"]}&player_type=artwork"></param>
+		<param name="allowscriptaccess" value="always"></param>
+		<embed allowscriptaccess="always" height="425" src="http://player.soundcloud.com/player.swf?url=#{SETTINGS["track"]}#{SETTINGS["player"]["params"]}&player_type=artwork" type="application/x-shockwave-flash" width="425"></embed>
+		</object>
+		
+%h1 Mini
+
+<object height="18" width="100%">
+<param name="movie" value="http://player.soundcloud.com/player.swf?url=#{SETTINGS["track"]}#{SETTINGS["player"]["params"]}&player_type=tiny"></param>
+<param name="allowscriptaccess" value="always"></param>
+<param name="wmode" value="transparent"></param>
+<embed wmode="transparent" allowscriptaccess="always" height="18" src="http://player.soundcloud.com/player.swf?url=#{SETTINGS["track"]}#{SETTINGS["player"]["params"]}&player_type=tiny" type="application/x-shockwave-flash" width="100%"></embed>
+</object>   
+
+%code
+	:escaped
+		<object height="18" width="100%">
+		<param name="movie" value="http://player.soundcloud.com/player.swf?url=#{SETTINGS["track"]}#{SETTINGS["player"]["params"]}&player_type=tiny"></param>
+		<param name="allowscriptaccess" value="always"></param>
+		<param name="wmode" value="transparent"></param>
+		<embed wmode="transparent" allowscriptaccess="always" height="18" src="http://player.soundcloud.com/player.swf?url=#{SETTINGS["track"]}#{SETTINGS["player"]["params"]}&player_type=tiny" type="application/x-shockwave-flash" width="100%"></embed>
+		</object>
+
+%h1 Standard
+
+<object height="81" width="100%">
+<param name="movie" value="http://player.soundcloud.com/player.swf?url=#{SETTINGS["track"]}#{SETTINGS["player"]["params"]}"></param>
+<param name="allowscriptaccess" value="always"></param>
+<embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=#{SETTINGS["track"]}#{SETTINGS["player"]["params"]}" type="application/x-shockwave-flash" width="100%"></embed>
+</object>
+
+%code
+	:escaped
+		<object height="81" width="100%">
+		<param name="movie" value="http://player.soundcloud.com/player.swf?url=#{SETTINGS["track"]}#{SETTINGS["player"]["params"]}"></param>
+		<param name="allowscriptaccess" value="always"></param>
+		<embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=#{SETTINGS["track"]}#{SETTINGS["player"]["params"]}" type="application/x-shockwave-flash" width="100%"></embed>
+		</object>

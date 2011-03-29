@@ -1,0 +1,80 @@
+development:
+  
+  soundcloud:
+    key: devkey
+    secret: devsecret
+    base_url: http://api.soundcloud.com
+  
+  twitter:
+    key: devkey
+    secret: devsecret
+    base_url: https://twitter.com
+  
+  facebook:
+    app_id: devappid
+    secret: devsecret
+    base_url: https://graph.facebook.com
+    
+  myspace:
+    key: devkey
+    secret: devsecret
+    base_url: http://api.myspace.com    
+    
+  digg:
+    key: devkey
+    secret: devsecret
+    base_url: http://digg.com
+
+test:
+  
+  soundcloud:
+    key: testkey
+    secret: testsecret
+    base_url: http://api.soundcloud.com
+  
+  twitter:
+    key: testkey
+    secret: testsecret
+    base_url: https://twitter.com
+  
+  facebook:
+    app_id: testappid
+    secret: testsecret
+    base_url: https://graph.facebook.com
+    
+  myspace:
+    key: testkey
+    secret: testsecret
+    base_url: http://api.myspace.com    
+    
+  digg:
+    key: testkey
+    secret: testsecret
+    base_url: http://digg.com
+
+production:
+  
+  soundcloud:
+    key: Xy5Kz9JJV5nY4RfdcDmwxg
+    secret: NKIsjMdlt57MIizb1cton9H9ujMSVBnJHraY8uSWqY
+    base_url: http://api.soundcloud.com
+  
+  twitter:
+    key: BUEoM0wVrOn09H28LzMgNQ
+    secret: hoB9nXOrDBEsgcKsCaMyPZjLCsmKgzmaFBGTW8Zmrls
+    base_url: https://twitter.com
+  
+  facebook:
+    app_id: 166524953360220
+    secret: 6e4a372de3abd54756b680cf46b6fdab
+    base_url: https://graph.facebook.com
+    
+  myspace:
+    key: prokey
+    secret: prosecret
+    base_url: http://api.myspace.com    
+    
+  digg:
+    key: prokey
+    secret: prosecre
+    base_url: http://digg.com

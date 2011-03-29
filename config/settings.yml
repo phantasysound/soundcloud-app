@@ -1,0 +1,63 @@
+# Promotion title, eg. Share to Download
+title: Babe Terror - Havaí (Memory Tapes Rework)
+
+# Competition description, eg. Share this track with your friends and get a free download.
+description: Babe Terror - Havaí (Memory Tapes Rework)
+
+# SoundCloud URL of the track that will be streamed and offered as a download
+# You can create a new track at: http://soundcloud.com/tracks/new
+# Make sure to set it to Public, Streamable, and Not Downloadable.
+track: http://soundcloud.com/phantasysound/babe-terror-havai-memory-tapes-rework-preview
+
+# Default options used to display embedded player
+player:
+  
+  # You can view a full list of available params here: http://wiki.github.com/soundcloud/Widget-JS-API/widget-options
+  params: "&download=false&color=000000&text_buy_track=Free Download"
+  
+  # Type of player: standard, artwork, mini
+  type: artwork
+  
+  # The height and width of player in pixels
+  height: 300
+  width: 300
+  
+# Call to action that appears above instructions, eg. Free Download
+header: Free Download
+
+# Tell the user what to do eg. Click below to share this track and get a free download.
+instructions: "Brazillian artist Babe Terror began making his music for something to soundtrack long late night walks around Sao Paulo. He uses only his own voice and lo-fi recording equipment to create a planet of sound that’s like a voyeuristic view from inside his head as he explores the city. The result is a twisted pop that the reconfigures the Beach Boys’ lush harmonies, into something haunted by the night time of the city. Images of empty car parks, abandoned buildings and hot summers emerge through a hazy mist of fuzzed out layers of controlled feedback and spacious reverb. His soundscapes have also provided the perfect bed for remixes from two artists creating progressive future music both at the height of their respective careers Memory Tapes and Duke Dumont. Both works shimmer in a hypnotic glaze of state of the art production and are gorgeous productions, making for a clear standout electronic release of the year."
+
+# Add email submission as an alternative
+email: false
+
+# Comma seperated list of services you will use
+services: "facebook,twitter"
+
+# Default options related to Facebook sharing
+facebook:
+  button: Share to Download # button text
+  header: Share this Track # popup header
+  status: 'Get Babe Terror''s Havaí (Memory Tapes Rework) from @phantasysound! http://bit.ly/bqC3h9' # default status
+  submit: Share # submit button
+
+# Default options related to Twitter sharing
+twitter:
+  button: Tweet to Download # button text
+  header: Tweet this Track # popup header
+  status: 'Get Babe Terror''s Havaí (Memory Tapes Rework) from @phantasysound! http://bit.ly/bqC3h9' # default status
+  submit: Tweet
+  
+# Default options related to MySpace sharing
+myspace:
+  button: Share to Download # button text
+  header: Share this Track # popup header
+  status: 'is downloading a free track from LINK' # default status
+  submit: Share
+  
+# Default options related to Digg sharing
+digg:
+  button: Digg to Download
+  header: Digg this Track
+  status: 'Leave a Comment...'
+  submit: Digg

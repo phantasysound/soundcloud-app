@@ -1,0 +1,26 @@
+!!! XHTML 1.0 Transitional
+%html
+	%head
+		%title= SETTINGS["title"]
+		
+		%meta{:name => "title", :content => SETTINGS["title"]}
+		%meta{:name => "description", :content => SETTINGS["description"]}
+		%meta{:name => "medium", :content => "video"}
+		%meta{:name => "video_height", :content => SETTINGS["player"]["height"]}
+		%meta{:name => "video_width", :content => SETTINGS["player"]["width"]}
+		%meta{:name => "video_type", :content => "application/x-shockwave-flash"}
+		%link{:rel => "video_src", :href => "http://player.soundcloud.com/player.swf?url="+SETTINGS["track"]+SETTINGS["player"]["params"]+"&player_type="+SETTINGS["player"]["type"]+"&auto_play=true"}
+		%link{:rel => "image_src", :href => "#{root_url}images/artwork.jpg"}
+		
+		= stylesheet_link_tag 'application'
+		= javascript_include_tag 'jquery', 'facebox', 'application'
+		
+	%body
+	
+		- if flash[:notice]
+			%p#notice= flash[:notice]
+			
+		- if flash[:error]
+			%p#error= flash[:error] 
+		
+		= yield

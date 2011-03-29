@@ -1,0 +1,13 @@
+%div#user{:style => "display:none"}
+
+	- form_for User.new do |f|
+	
+		= f.hidden_field :service, :value => "email"
+
+		%h2 Sign-up for Download
+	
+		%p= f.text_field :email, :value => 'Enter Email Address', :onfocus => '(this.value == "Enter Email Address") ? this.value = "" : this.value'
+	
+		%div.fr= f.submit "Submit", :class => "button small"
+		
+		%div.clear

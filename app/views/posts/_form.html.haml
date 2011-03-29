@@ -1,0 +1,29 @@
+- service = session[:user][:service]
+
+- service == "facebook" ? count = 420 : count = 140
+
+%div#post{:style => "display:none"}
+
+	- form_for "post", :url => posts_path do |f|
+
+		= f.hidden_field :service, :value => service
+
+		%h2.fl= SETTINGS[service]["header"]
+		
+		%h2#count.fr= count - SETTINGS[service]["status"].length if not service == "digg"
+
+		- if service == "digg"
+		
+			%p= f.text_area :text, :value => SETTINGS[service]["status"], :onFocus => '(this.value == "' + SETTINGS[service]["status"] + '") ? this.value = "" : this.value'
+			
+		- else
+		
+			%p.clear= f.text_area :text, :autocomplete => "off", :onkeyup => "count(#{count});", :onFocus => "count(#{count});", :onBlur => "count(#{count});", :value => SETTINGS[service]["status"]
+
+		%div.fl= image_tag session[:user][:picture], :height => 25, :width => 25, :style => "border: 1px solid #CCC;"
+		
+		%div.fl{:style => "padding:5px 0 0 5px"} You're <strong>#{session[:user][:name]}</strong> - #{link_to "Sign out?", logout_path}
+		
+		%div.fr= f.submit SETTINGS[service]["submit"], :class => "button small"
+				
+		%div.clear

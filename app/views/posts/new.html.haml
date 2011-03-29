@@ -1,0 +1,33 @@
+= image_tag 'logo.png', :alt => SETTINGS["title"], :id => "logo"
+
+= render "player"
+
+%h1= SETTINGS["header"]
+
+- if session[:download]
+
+	%p Click below to start your download.
+	
+	= link_to "Download", download_path, :class => "button glow"
+	
+- else
+
+	%p= SETTINGS["instructions"]
+	
+	- if session[:user] && session[:user][:service] != "soundcloud"
+	
+		= link_to SETTINGS[session[:user][:service]]["button"], "#post", :class => "button", :rel => "facebox"
+		
+		= render "form"
+		
+	- else
+	
+		- SETTINGS["services"].split(',').each do |x|
+			
+			= link_to image_tag("#{x}.png", :alt => x.capitalize, :border => 0), login_path(x), :class => "button", :title => "Login with #{x.capitalize}"
+			
+		- if SETTINGS["email"]
+			
+			%p You may also #{link_to "Submit Your Email", "#user", :rel => "facebox"} to download
+			
+			= render "users/form"
